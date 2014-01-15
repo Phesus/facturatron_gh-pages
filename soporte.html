@@ -15,14 +15,28 @@
     <div class="col-md-6">
       <h2 class="page-header">Manual</h2>
         <p>Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-        <a class="btn btn-primary" href="#">Click Me!</a>
+        <a class="btn btn-primary" id="manual" href="#">Consultar</a>
     </div>
 
     <div class="col-md-6">
       <h2 class="page-header">FAQ</h2>
-        <p>Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets.</p>
-        <a class="btn btn-primary" href="#">Click Me!</a>
+        <p>Respuestas a preguntas frecuente, esta es la primera línea de defensa contra cualquier duda.</p>
+        <a class="btn btn-primary" id="faq" href="#">Consultar</a>
     </div>
 
   </div><!-- /.row -->
 </div>
+<script type="text/javascript" charset="utf-8">
+	$(function() {
+	    $("#manual").click(function() {
+	        $('#contenido')
+	           .load('sidebar.html');
+	    });
+	});
+	$(function() {
+	    $("#faq").click(function() {
+	        $('#contenido')
+	           .load('faq.html');
+	    });
+	});
+</script>
