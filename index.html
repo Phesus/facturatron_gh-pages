@@ -34,7 +34,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse" id="navbar-main">
           <ul class="nav navbar-nav">
-	        <li><a id="features" >Características</a></li>
+	        <li><a href="#features">Características</a></li>
 			<li><a id="proyecto" href="https://github.com/Phesus/Facturatron">Proyecto</a></li>
 	        <li><a id="soporte" >Soporte</a></li>
 	        <li><a id="contacto" >Contacto</a></li>
@@ -80,13 +80,13 @@
     	</div><!-- /.section -->
 		<hr>
 		<!--Features 1-->
-		<div class="section-colored">
+		<div id="features" class="section-colored">
 
 	      <div class="container">
 
 	        <div class="row">
 	          <div class="col-lg-6 col-md-6 col-sm-6">
-	            <h2>Las características de Facturatron incluyen:</h2>
+	            <h2>Las características de Facturatron incluyen</h2>
 	            <ul>
 					<li>Generación de CFDIs versión 3.2</li>
 			        <li>Produce los archivos PDF y XML requeridos por el SAT</li>
@@ -96,10 +96,11 @@
 			        <li>Catálogo de clientes</li>
 			        <li>Buscador de clientes en el editor de comprobantes</li>
 					<li>Listado de facturas emitidas, entre sus funciones se encuentran: mostrar PDFs generados y cancelar comprobantes.</li>
-	            </ul>
+	            	<li>Embebible. Facturatron se puede integrar dentro de cualquier aplicación Java</li>
+				</ul>
 	          </div>
 	          <div class="col-lg-6 col-md-6 col-sm-6">
-	            <img class="img-responsive" src="images/multi-pac700x450.png">
+	            <img class="img-responsive" src="images/features.png">
 	          </div>
 	        </div><!-- /.row -->
 
@@ -114,10 +115,10 @@
 
 		    <div class="row">
 		      <div class="col-lg-6 col-md-6 col-sm-6">
-		        <img class="img-responsive" src="images/features.png">
+		        <img class="img-responsive" src="images/multi-pac700x450.png">
 		      </div>
 		      <div class="col-lg-6 col-md-6 col-sm-6">
-		        <h2>Más características:</h2>
+		        <h2>Eso no es todo, además</h2>
 		        <ul>
 		          <li>Multi-PAC: Es posible cambiar el PAC con el que se timbrará el comprobante</li>
 				  <li>Se pueden solicitar o programar nuevos conectores a PACs</li>
@@ -177,12 +178,6 @@
 		    $("#soporte").click(function() {
 		        $('#contenido')
 		           .load('sidebar.html');
-		    });
-		});
-		$(function() {
-		    $("#features").click(function() {
-		        $('#contenido')
-		           .load('features.html');
 		    });
 		});
 		$(function() {
